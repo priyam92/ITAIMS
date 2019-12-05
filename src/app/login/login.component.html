@@ -1,0 +1,45 @@
+<div class="container mt--8 pb-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-5 col-md-7">
+      <div class="card bg-secondary shadow border-0">
+        <div class="card-body px-lg-5 py-lg-5">
+          <div class="login-form">
+            <form class="form" role="form" (ngSubmit)="login()">
+              <h2 class="text-center">WELCOME</h2>
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text span-label">
+                    <i class="fa fa-user"></i>
+                  </span>
+                </div>
+                    User Name : <input type="text" class="form-control inputGroup" name="username" id="username"
+                    placeholder="Username" [(ngModel)]="username">
+                </div>
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text span-label">
+                      <fa name="key"></fa>
+                    </span>
+                  </div>
+                  Password : <input type="password" class="form-control inputGroup" name="password" id="password"
+                    placeholder="password" [(ngModel)]="password">
+                </div>
+                <div class="input-group form-group">
+                  <button type="submit" class="btn btn-primary btn-lg btn-block">
+                    Login
+                  </button>
+                </div>
+                <button (click)=checkLogin() class="btn btn-success">Login</button>
+              </div>
+                   <button type="submit" class="btn btn-primary btn-lg btn-block">
+                    Register
+                  </button> 
+                 </div>
+            </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
